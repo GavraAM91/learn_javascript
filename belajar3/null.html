@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null</title>
+</head>
+<body>
+    <script>
+        /* 
+            null merupakan representasi dari data kosong
+            berbeda dengan undefined karena sudah ditambahkan valuenya (nilai value = null)
+            sedangkan undefined belum ditambahkan value apapun
+        */
+
+        //kode null dan undefined
+
+        const name = null;
+
+        if(name === undefined) {
+            console.info("Undefined");
+        } else if (name === null ) {
+            console.info("Value = null");
+        } else {
+            console.info(`Hello ${name}`);
+        }
+    </script>
+</body>
+</html>

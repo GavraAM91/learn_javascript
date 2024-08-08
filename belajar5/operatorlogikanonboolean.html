@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator logika di non boolean</title>
+</head>
+<body>
+    <script>
+        /*kita bisa menggunakan operator logika AND (&&) and OR (||) untuk tipe data non boolean*/
+
+        //Operator OR di non boolean
+        /*
+            Operator or membaca dari kiri ke kanan
+            Operator ini akan mengambil nilai pertama yang truthy
+            jika tidak ada satupun, maka nilai terakhir yang diambil
+        */
+
+        //kode operator OR
+        console.info("hello" || ''); //hello
+        console.info("" || []); //[]
+        console.info("0" || "NOL"); //0
+        console.info(0 || "NOL"); //NOL
+        console.info(null || "NULL"); // NULL
+        console.info(undefined || "UNDEFINED"); // UNDEFINED
+
+    </script>
+</body>
+</html>

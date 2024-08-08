@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String template</title>
+</head>
+<body>
+    <script>
+        
+        const first_name = "Marsha";
+        const middle_name = "Lenathea";
+        const last_name = "Lapian";
+
+        const template = `Name : ${first_name} ${middle_name} ${last_name}`;
+
+        console.info(template);
+
+        //expression di string template 
+        const value = 85;
+        const show = `Name : ${first_name}, Lulus: ${value > 75}`;
+
+        console.info(show);
+
+        //multiline string
+        let multilineString = `
+        Marsha Lenathea Lapian,
+        Azizi shafaa asadel,
+        Mutiara azahra,
+        Reva Adelia
+        `;
+
+        document.writeln("<pre>");
+        document.writeln(multilineString);
+        document.writeln("</pre>");
+    </script>
+</body>
+</html>

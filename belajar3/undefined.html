@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined</title>
+</head>
+<body>
+    <script>
+        /*
+        FOR YOU INFORMATION
+        undefined : sebuah kata kunci di js
+        undefined adalah sebuah tipe data
+
+        sebuah variable yang belum berisi nilai, maka variable tsb bertipe undefined
+        undifined berbeda dengan null dibahasa pemrograman lain
+        */
+
+        // let name;
+
+        // if(name === undefined) {
+        //     alert("Undefined");
+        // } else { 
+        //     alert("Defined");
+        // }
+
+        const name = ["Marsha", "Lenathea", "Lapian"];
+
+        if(name[2] === undefined) {
+            console.info("Hello World");
+        } else {
+            console.info(`Hello ${name[2]}`);
+        }
+
+
+        //UNDEFINED OBJECT PROPERTY
+        const person = {
+            name: "Gita"
+        };
+
+        if(person.name === undefined) {
+            console.info("OBJECT UNDEFINED");
+        } else { 
+            console.info("OBJECT DEFINED")
+        }
+        
+    </script>
+</body>
+</html>

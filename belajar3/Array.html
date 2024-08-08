@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //operasi array
+        /*
+            array.push(value)    > Menambahkan data ke array
+            array.length         > Mendapatkan panjang array
+            array[index]         > Mendapatkan data di posisi index
+            array[index] = value > Mengubah data di posisi index
+            delete array[index]  > Menghapus data di posisi index, namun index tidak bergeser
+        */
+
+        //array basic
+        let array1 = [];
+
+        array1 = ["Marsha","Lenathea","Lapian"];
+
+        //adding data to array
+        const names = [];
+        names.push("Marsha");
+        names.push("Lenathea" , "Lapian");
+        names.push("Azizi", "shafaa", "asadel");
+
+        console.table(names); 
+
+       //operasi array 
+       console.info(names[3]);
+
+       //ganti nilai di index
+       names[0] = "Gita";
+    
+       console.table(names);
+       console.info(names.length);
+
+       delete names[3];
+
+       //memasukkan array ke dalam array
+       names.push(["Adzana", "Shaliha"]);
+
+       console.table(names);
+    </script>
+</body>
+</html>
