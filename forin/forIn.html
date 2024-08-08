@@ -7,11 +7,15 @@
 </head>
 <body>
 <script>
-    const person = {
-        firstName: 'Gavra',
-        middleName: 'Arva',
-        lastName: 'Maheswara'
-    }
+    //if index have name
+    // const person = {
+    //     firstName: 'Gavra',
+    //     middleName: 'Arva',
+    //     lastName: 'Maheswara'
+    // }
+
+    //if it's not 
+    const person = ['Gavra', 'Arva', 'Maheswara'];
 
     for (const property in person) {
         document.writeln(`<p>${property} : ${person[property]}</p>`);
