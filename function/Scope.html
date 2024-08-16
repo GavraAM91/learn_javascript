@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        //global Scope
+        let counter = 0;
+
+        function counterPlus() {
+            //access the global Scope
+            counter++;
+        }
+
+        counterPlus();
+        counterPlus();
+
+        console.info(counter);
+
+        function first() {
+            //local scope
+            let firstVariable = "First";
+        }
+
+        function second() {
+            //local scope
+            let secondVariable = "Second";
+        }
+
+        // first();
+        // second();
+
+        // console.info(firstVariable);
+        // console.info(secondVariable);
+
+        //nested function scope
+        function assoy() {
+            let variableOne = "cihuyyyyyyyy";
+
+            function asek() {
+                console.info(variableOne); //can access local scope from assoy
+            }
+
+            asek();
+        }
+
+        assoy();
+    </script>
+</body>
+</html>
